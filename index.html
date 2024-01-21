@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" type="image/png" href="img/hdchostlogo.png">
   <title>hDC Host</title>
   <!-- Icones -->
   <link
@@ -22,7 +23,11 @@
         <a href="#">
           <img class="logo" src="img/hdchostlogo.png" alt="hDC Host" draggable="false">
         </a>
-        <ul>
+        <button class="menu" onclick="showMenu()">
+          <i class="fa-solid fa-bars open"></i>
+          <i class="fa-solid fa-x close esconder"></i>
+        </button>
+        <ul class="" id="menu">
           <li>
             <a class="nav-link" href="#">Home</a>
           </li>
@@ -97,7 +102,7 @@
           <div class="plan">
             <ul>
               <li class="price recommended">R$ 50/mês</li>
-              <li class="plan-name">Dedicado Plus</li>
+              <li class="plan-name">Dedicado +</li>
               <li>10GB de espaço</li>
               <li>10 subdomínios</li>
               <li>100 contas de e-mail</li>
@@ -164,5 +169,7 @@
       <p>hDC Host @ 2024</p>
     </footer>
   </div>
+
+  <script src="main.js"></script>
 </body>
 </html>
