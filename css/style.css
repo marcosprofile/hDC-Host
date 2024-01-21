@@ -34,6 +34,7 @@ p {
   padding: 1rem 2rem;
   position: sticky;
   top: 0;
+  z-index: 2;
 }
 
 .navbar-container nav {
@@ -273,4 +274,73 @@ p {
 
 .searchdomain-container input[type="submit"]:hover {
   opacity: 1;
+}
+
+/* CONTACT FORM */
+.contact-container {
+  text-align: center;
+  padding: 5rem 0 2rem 0;
+}
+
+.contact-container h2 {
+  font-size: 36px;
+  line-height: 156%;
+}
+
+.contact-container p {
+  font-size: 20px;
+  margin-bottom: 2.5rem;
+  line-height: 156%;
+}
+
+.contact-container input,
+.contact-container textarea {
+  width: 30%;
+  padding: .75rem 1rem;
+  font-size: 16px;
+  border-radius: .5rem;
+  border: 1px solid var(--grey-200);
+  margin: 0 .75rem 1.5rem;
+}
+
+.contact-container textarea {
+  display: block;
+  margin: 0 auto 1.5rem;
+  width: 61.5%;
+  height: 128px;
+  resize: vertical;
+}
+
+.contact-container input:focus,
+.contact-container textarea:focus {
+  outline: 1px solid var(--paragraph);
+}
+
+.contact-container input[type="submit"] {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  background: var(--primary-color);
+  color: var(--bg-dark-grey);
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all .2s ease;
+}
+
+.contact-container input[type="submit"]:hover {
+  outline: none;
+  background: var(--primary-color-hover);
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  background: var(--bg-dark-grey);
+}
+
+footer p {
+  font-weight: bold;
+  color: var(--white);
 }
