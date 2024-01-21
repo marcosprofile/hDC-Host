@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #2CC76A;
+  --primary-color-hover: #22BB5F;
+  --bg-dark-grey: #232A31;
+  --title: #333;
+  --paragraph: #70747A;
+  --grey: #CCC;
+  --red: #EF3F29;
+  --orange: #EF8F29;
+  --white: #FFF;
+}
+
+h1, h2, h3 {
+  color: var(--title);
+}
+
+p {
+  color: var(--paragraph);
+}
+
+/* Navbar */
+.navbar-container {
+  width: 100%;
+  background: var(--bg-dark-grey);
+  padding: 1rem 2rem;
+}
+
+.navbar-container nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-container nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2.5rem;
+}
+
+.navbar-container .nav-link, .navbar-container .default-btn {
+  text-decoration: none;
+  transition: .2s ease;
+  text-transform: uppercase;
+}
+
+.navbar-container .nav-link {
+  color: var(--white);
+}
+
+.navbar-container .nav-link:hover {
+  color: var(--grey);
+}
+
+.logo {
+  width: 50px;
+}
+
+.default-btn {
+  padding: 1rem 1.5rem;
+  background: var(--primary-color);
+  border-radius: .5rem;
+  color: var(--bg-dark-grey);
+  font-weight: 600;
+}
+
+.default-btn:hover {
+  background: var(--primary-color-hover);
+}
+
+/* MAIN BANNER */
+.main-banner {
+  background-image: url("../img/mainbanner.png");
+  background-size: cover;
+  background-position: center;
+  padding: 10rem 0;
+}
+
+.main-banner h1, .main-banner p {
+  color: var(--white);
+  text-align: center;
+  font-weight: bold;
+  text-shadow: #000 4px 2px 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.main-banner h1 {
+  font-size: 54px;
+}
+
+.main-banner p {
+  font-size: 32px;
+}
+
+/* SERVICES */
+.services-container {
+  padding: 5rem 0;
+}
+
+.services-container ul {
+  display: flex;
+  list-style: none;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.services-container li {
+  flex: 1 1 200px;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.fas {
+  font-size: 60px;
+  margin-bottom: 1rem;
+}
+
+.fa-shield-alt {
+  color: var(--primary-color);
+}
+
+.fa-rocket {
+  color: var(--red);
+}
+
+.fa-comments {
+  color: var(--orange);
+}
+
+.services-container h3 {
+  margin-bottom: 1.5rem;
+}
+
+.services-container p {
+  line-height: 156%;
+}
