@@ -11,8 +11,10 @@
   --bg-dark-grey: #232A31;
   --title: #333;
   --paragraph: #70747A;
-  --grey: #CCC;
-  --red: #EF3F29;
+  --green-800: #00854D;
+  --grey-100: #E8E9EA;
+  --grey-200: #CCC;
+  --red: #EB003F;
   --orange: #EF8F29;
   --white: #FFF;
 }
@@ -55,7 +57,7 @@ p {
 }
 
 .navbar-container .nav-link:hover {
-  color: var(--grey);
+  color: var(--grey-200);
 }
 
 .logo {
@@ -141,4 +143,85 @@ p {
 
 .services-container p {
   line-height: 156%;
+}
+
+/* PRICES AND PLANS */
+.pricing-container {
+  padding-bottom: 5rem;
+  text-align: center;
+}
+
+.pricing-container h2 {
+  font-size: 36px;
+  line-height: 156%;
+}
+
+.pricing-container p {
+  font-size: 20px;
+  line-height: 156%;
+}
+
+.plans-container {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 50px auto 0;
+}
+
+.plan {
+  flex: 1;
+  max-width: 275px;
+  margin: 0 20px;
+  border-radius: .5rem;
+  overflow: hidden;
+}
+
+.plan ul {
+  padding: 0;
+  list-style: none;
+}
+
+.plan li {
+  height: 50px;
+  line-height: 50px;
+  background: var(--grey-100);
+  color: var(--title);
+}
+
+.plan .price {
+  display: grid;
+  place-items: center;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: var(--green-800);
+  color: var(--white);
+  text-align: center;
+  margin: 0 auto -50px;
+  font-size: 18px;
+  font-weight: bold;
+  position: relative;
+}
+
+.plan .plan-name {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--white);
+  background: var(--bg-dark-grey);
+  padding: 50px 0;
+  border-radius: .5rem .5rem 0 0;
+}
+
+.plan .plan-btn {
+  background: var(--green-800);
+  color: var(--white);
+  font-size: 24px;
+  height: 75px;
+  line-height: 75px;
+  cursor: pointer;
+}
+
+.plan .recommended {
+  background: #EB0054;
 }
